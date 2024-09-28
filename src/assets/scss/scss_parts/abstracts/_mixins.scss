@@ -1,0 +1,133 @@
+//Box Shadow @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.2));
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow: inset $top $left $blur $size $color;
+    -moz-box-shadow: inset $top $left $blur $size $color;
+    box-shadow: inset $top $left $blur $size $color;
+  }
+
+  @else {
+    -webkit-box-shadow: $top $left $blur $size $color;
+    -moz-box-shadow: $top $left $blur $size $color;
+    box-shadow: $top $left $blur $size $color;
+  }
+}
+
+// @include transform(translate(-50%,-50%) rotate(120deg))
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  transform: $args;
+}
+
+// @include mask-icon($url: url(asset/img/icon.svg), $bgColor: red)
+@mixin mask-icon($url: null, $bgColor: $icon-color) {
+  @if ($url) {
+    -webkit-mask-image: $url;
+    mask-image: $url;
+  }
+  @if ($bgColor) {
+    background-color: $bgColor;
+  }
+
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+// @include transition(all,2s,ease-out)
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
+}
+
+// keyframes @include animation(arg de animation https://developer.mozilla.org/es/docs/Web/CSS/animation)
+@mixin animation($args) {
+  -webkit-animation: $args;
+  -moz-animation: $args;
+  -ms-animation: $args;
+  -o-animation: $args;
+  animation: $args;
+}
+
+// maximum lines and same height text @include($lines: 2, $lineHeight: 1.2em)
+@mixin limit-lines($lines: 3, $lineHeight: 1.5em) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: $lineHeight;
+  height: #{$lineHeight * $lines};
+  -webkit-line-clamp: $lines;
+  line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
+// centrar  @include element-center($position, $left, $top, $transformleft, $transformtop)
+@mixin element-center($position: absolute, $left: 50%, $top: 50%, $transformleft: -50%, $transformtop: -50%) {
+  transform: translate($transformleft, $transformtop);
+  left: $left;
+  top: $top;
+  position: $position;
+}
+
+// placeholder webkit selector @include placeholder()
+@mixin placeholder() {
+  &::placeholder {
+    @content
+  }
+
+  &::-webkit-input-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    @content
+  }
+
+  &::-ms-input-placeholder {
+    @content
+  }
+}
+
+// *****   MEDIA QUERIES *****
+//@include mq(1200px) // @include mq($breakpoints-mq-1200)
+@mixin mq($size) {
+  @media only screen and (max-width: $size) {
+    @content;
+  }
+}
+
+/* 
+@include on-event()
+on event 
+
+*/
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+      @content;
+    }
+  }
+}

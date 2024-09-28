@@ -1,0 +1,65 @@
+// **** COLORS ****
+// blue
+$blue--1: #5ECDEE;
+$blue--2: #7ED7F1;
+$blue--3: #9EE1F5;
+$blue--4: #BFEBF8;
+$blue--5: #DFF5FC;
+$blue--6: #EFFAFD;
+// gold
+$gold--1: #EDC418;
+// purple
+$purple--1: #809EFF;
+// gray
+$gray--1: #C0C0C0;
+// black
+$black--1: #1C1C1C;
+//others
+$white: #F7F1F2;
+$purewhite: #FFFFFF;
+$pureblack: #000000;
+$greyblue: #DFF5FC;
+$greylight: #787f84;
+$greymedium: #676e73;
+$greymedium--2: #2A2A2A;
+$greydark: #373737;
+$button--lines: #E6E1E5;
+$grey--lines: #434749;
+$red--error: #ED4B18;
+$red: #f00;
+$reddark:#800000;
+
+// **** BREAKPOINTS - SIZE ****
+$breakpoints-mq--480: 480px; 
+$breakpoints-mq--768: 768px; 
+$breakpoints-mq--960: 960px; 
+$breakpoints-mq--1024: 1024px; 
+$breakpoints-mq--1200: 1200px; 
+$breakpoints-mq--1440: 1440px; 
+$breakpoints-mq--1336: 1366px; 
+$breakpoints-mq--1920: 1920px; 
+$breakpoints-mq--2000: 2000px; 
+
+$grid-container: 1440px;
+
+// **** TRANSITIONS ****
+$linear-fast: .1s linear;
+$linear-medium: .3s linear;
+$linear-slow: .5s linear;
+$ease-fast: .1s ease-in-out;
+$ease-medium: .3s ease-in-out;
+$ease-slow: .5s ease-in-out;
+$easein-fast: .1s ease-in;
+$easein-medium: .3s ease-in;
+$easein-slow: .5s ease-in;
+$easeout-fast: .1s ease-out;
+$easeout-medium: .3s ease-out;
+$easeout-slow: .5s ease-out;
+
+// **** OTHERS ****
+$columngap-medium: 20px;
+$navbar-height: 190px;
+$navbar-height--mobile: 90px;
+
+
+

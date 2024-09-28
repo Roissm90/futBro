@@ -1,0 +1,107 @@
+
+// ***** HELPERS POSITIONS ******
+
+//.clase{@extend %fixed}
+%fixed {
+  position: fixed;
+  width: 100%;
+}
+
+//.clase{@extend %sticky}
+%sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+
+// ***** HELPERS MOV ANIMATION ******
+
+//.clase{@extend %fade-in}
+%fade-in {
+  @include animation(fadeIn 1s forwards);
+}
+
+@-webkit-keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//.clase{@extend %fade-in-up}
+%fade-in-up {
+  position: relative;
+  @include animation(fadeInUP 1s forwards);
+}
+
+@-webkit-keyframes fadeInUP{
+  0% {
+    opacity: 0;
+    top:20px;
+  }
+
+  100% {
+    opacity: 1;
+    top:0;
+  }
+}
+
+@keyframes fadeInUP{
+  0% {
+    opacity: 0;
+    top:20px;
+  }
+
+  100% {
+    opacity: 1;
+    top:0;
+  }
+}
+
+//.clase{@extend %scaleAnimationCirc}
+%scaleAnimationCirc {
+  border-radius: 50%;
+  background: $red;
+  animation: scaleAnimationCirc 1s infinite;
+}
+
+
+@-webkit-keyframes scaleAnimationCirc{
+  0%, 100% {
+    transform: scale(.5);
+   background: $red;
+    filter: blur(0px); /* Quitar el filtro al inicio y al final */
+  }
+  50% {
+    transform: scale(.7);
+   background: $red;;
+    filter: blur(.25px); /* Aplicar el filtro de desenfoque durante la animación */
+  }
+}
+
+
+@keyframes scaleAnimationCirc{
+  0%, 100% {
+    transform: scale(.5);
+   background: $red;
+    filter: blur(0px); /* Quitar el filtro al inicio y al final */
+  }
+  50% {
+    transform: scale(.7);
+    background: $red;
+    filter: blur(.25px); /* Aplicar el filtro de desenfoque durante la animación */
+  }
+}

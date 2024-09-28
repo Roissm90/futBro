@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+    &.modal-open{
+        overflow: hidden;
+    }
+}
+
+main{
+    display: block;
+}
+
+section{
+    display: block;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container{
+    display: block;
+    max-width: $grid-container !important;
+    margin: 0 auto;
+    width: 95%;
+    padding: 0; 
+    
+    @include mq($breakpoints-mq--480) {
+        width: 90%;
+    }
+}
+
+.container-fluid {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.row{
+   display: flex;
+   flex-flow: row wrap;
+   max-width: 100%;
+   width: 100%;
+}
+
+//RESET WORDPRESS
+
+.page{
+    margin: 0;
+}
