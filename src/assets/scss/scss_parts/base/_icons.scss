@@ -84,3 +84,14 @@ $fs-escape-chars: (
   mask-position: center;
   position: relative;
 }
+.masked-card{
+  display: block;
+  height: 160px;
+  width: 110px;
+  padding: 10px;
+  background-color: red;
+  mask-image: var(--svg-bg-card);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  position: relative;
+}
