@@ -2,6 +2,6 @@ import React from 'react'
 
 export const App = () => {
   return (
-    <div className="prueba container">App</div>
+    <div className="masked-card">App</div>
   )
 }
