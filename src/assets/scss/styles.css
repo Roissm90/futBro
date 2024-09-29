@@ -132,21 +132,6 @@ li {
           mask-position: center;
   position: relative;
 }
-
-.masked-card {
-  display: block;
-  height: 160px;
-  width: 110px;
-  padding: 10px;
-  background-color: red;
-  -webkit-mask-image: var(--svg-bg-card);
-          mask-image: var(--svg-bg-card);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
-  position: relative;
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
