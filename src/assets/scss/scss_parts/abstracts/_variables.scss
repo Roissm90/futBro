@@ -1,34 +1,3 @@
-// **** COLORS ****
-// blue
-$blue--1: #5ECDEE;
-$blue--2: #7ED7F1;
-$blue--3: #9EE1F5;
-$blue--4: #BFEBF8;
-$blue--5: #DFF5FC;
-$blue--6: #EFFAFD;
-// gold
-$gold--1: #EDC418;
-// purple
-$purple--1: #809EFF;
-// gray
-$gray--1: #C0C0C0;
-// black
-$black--1: #1C1C1C;
-//others
-$white: #F7F1F2;
-$purewhite: #FFFFFF;
-$pureblack: #000000;
-$greyblue: #DFF5FC;
-$greylight: #787f84;
-$greymedium: #676e73;
-$greymedium--2: #2A2A2A;
-$greydark: #373737;
-$button--lines: #E6E1E5;
-$grey--lines: #434749;
-$red--error: #ED4B18;
-$red: #f00;
-$reddark:#800000;
-
 // **** BREAKPOINTS - SIZE ****
 $breakpoints-mq--480: 480px; 
 $breakpoints-mq--768: 768px; 
@@ -61,5 +30,44 @@ $columngap-medium: 20px;
 $navbar-height: 190px;
 $navbar-height--mobile: 90px;
 
+// **** COLORS ****
+$black-charcoal: #131313;
+$dark-background: #1D1A1A;
+$grey-dark: #646366;
+$grey-medium: #808080;
+$grey-light: #A5A5A5;
+$grey-super-light: #ddd1cd;
+$lines: #2a2a2a;
+$red-chilli: #F8203A;
+$green: #4DC07B;
+$white-salt: #F6EFED;
+$purewhite: #fff;
 
+//CREAR CLASES DE COLOR
+// Definimos la lista de variables de color
+$colors: (
+    black-charcoal:$black-charcoal,
+    dark-background:$dark-background,
+    grey-dark:$grey-dark,
+    grey-medium:$grey-medium,
+    grey-light:$grey-light,
+    grey-super-light:$grey-super-light,
+    lines:$lines,
+    red-chilli:$red-chilli,
+    white-salt:$white-salt,
+    purewhite: $purewhite
+);
 
+// Generamos las clases de texto para cada variable de color
+@each $color, $value in $colors {
+    .color-#{$color} {
+        color: $value;
+    }
+}
+
+// Generamos las clases de background para cada variable de color
+@each $color, $value in $colors {
+    .bg-#{$color} {
+        background-color: $value;
+    }
+}

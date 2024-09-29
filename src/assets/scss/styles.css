@@ -1,4 +1,83 @@
-@charset "UTF-8";
+.color-black-charcoal {
+  color: #131313;
+}
+
+.color-dark-background {
+  color: #1D1A1A;
+}
+
+.color-grey-dark {
+  color: #646366;
+}
+
+.color-grey-medium {
+  color: #808080;
+}
+
+.color-grey-light {
+  color: #A5A5A5;
+}
+
+.color-grey-super-light {
+  color: #ddd1cd;
+}
+
+.color-lines {
+  color: #2a2a2a;
+}
+
+.color-red-chilli {
+  color: #F8203A;
+}
+
+.color-white-salt {
+  color: #F6EFED;
+}
+
+.color-purewhite {
+  color: #fff;
+}
+
+.bg-black-charcoal {
+  background-color: #131313;
+}
+
+.bg-dark-background {
+  background-color: #1D1A1A;
+}
+
+.bg-grey-dark {
+  background-color: #646366;
+}
+
+.bg-grey-medium {
+  background-color: #808080;
+}
+
+.bg-grey-light {
+  background-color: #A5A5A5;
+}
+
+.bg-grey-super-light {
+  background-color: #ddd1cd;
+}
+
+.bg-lines {
+  background-color: #2a2a2a;
+}
+
+.bg-red-chilli {
+  background-color: #F8203A;
+}
+
+.bg-white-salt {
+  background-color: #F6EFED;
+}
+
+.bg-purewhite {
+  background-color: #fff;
+}
+
 /* 
 @include on-event()
 on event 
@@ -106,7 +185,8 @@ li {
  */
 :root {
   --svg-arrow-more: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20fill=%27none%27%20viewBox=%270%200%2021%2012%27%3E%3Cpath%20fill=%27%231D1D1B%27%20fill-rule=%27evenodd%27%20d=%27M14.778%200L13.68%201.058l4.34%204.192H0v1.5h18.021l-4.34%204.193L14.778%2012%2021%206l-6.222-6z%27%20clip-rule=%27evenodd%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E ");
-  --svg-bg-card: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20xmlns%3Axlink=%27http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%27%20width=%27500%27%20zoomAndPan=%27magnify%27%20viewBox=%270%200%20375%20374.999991%27%20height=%27500%27%20preserveAspectRatio=%27xMidYMid%20meet%27%20version=%271.0%27%3E%3Cdefs%3E%3CclipPath%20id=%2753909b2ac7%27%3E%3Cpath%20d=%27M%20149.84375%20132.296875%20L%20225.152344%20132.296875%20L%20225.152344%20242.617188%20L%20149.84375%20242.617188%20Z%20M%20149.84375%20132.296875%20%27%20clip-rule=%27nonzero%27%2F%3E%3C%2FclipPath%3E%3CclipPath%20id=%277a67339f21%27%3E%3Cpath%20d=%27M%20187.496094%20132.367188%20L%20225.152344%20160.492188%20L%20225.152344%20214.492188%20L%20187.496094%20242.617188%20L%20149.84375%20214.492188%20L%20149.84375%20160.492188%20Z%20M%20187.496094%20132.367188%20%27%20clip-rule=%27nonzero%27%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg%20clip-path=%27url%28%2353909b2ac7%29%27%3E%3Cg%20clip-path=%27url%28%237a67339f21%29%27%3E%3Cpath%20fill=%27%23919191%27%20d=%27M%20149.84375%20242.617188%20L%20149.84375%20132.296875%20L%20225.152344%20132.296875%20L%20225.152344%20242.617188%20Z%20M%20149.84375%20242.617188%20%27%20fill-opacity=%271%27%20fill-rule=%27nonzero%27%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E ");
+  --svg-border-card: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width=%27130%27%20height=%27150%27%20viewBox=%270%200%20132%20150%27%20preserveAspectRatio=%27xMidYMid%20meet%27%3E%3Cpath%20fill=%27transparent%27%20stroke-width=%271%27%20stroke=%27%23000%27%20d=%27M%2066%200%20L%20131%2037.5%20L%20131%20112.5%20L%2066%20150%20L%201%20112.5%20L%201%2037.5%20Z%27%20%2F%3E%3C%2Fsvg%3E ");
+  --svg-bg-card: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width=%27130%27%20height=%27150%27%20viewBox=%270%200%20132%20150%27%20preserveAspectRatio=%27xMidYMid%20meet%27%3E%3Cpath%20fill=%27%23000%27%20stroke-width=%271%27%20stroke=%27%23000%27%20d=%27M%2066%200%20L%20131%2037.5%20L%20131%20112.5%20L%2066%20150%20L%201%20112.5%20L%201%2037.5%20Z%27%20%2F%3E%3C%2Fsvg%3E ");
   --svg-facebook: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2023%2023%27%20fill=%27none%27%3E%3Cpath%20d=%27M1.70001%2011.5C1.70001%2016.9123%206.08762%2021.2999%2011.5%2021.2999C16.9124%2021.2999%2021.3%2016.9123%2021.3%2011.5C21.3%206.08756%2016.9124%201.69995%2011.5%201.69995C6.08762%201.69995%201.70001%206.08756%201.70001%2011.5Z%27%20fill=%27%23DFF5FC%27%2F%3E%3Cpath%20d=%27M11.5%2021.2999C6.08762%2021.2999%201.70001%2016.9123%201.70001%2011.5C1.70001%206.08756%206.08762%201.69995%2011.5%201.69995C16.9124%201.69995%2021.3%206.08756%2021.3%2011.5C21.3%2016.9123%2016.9124%2021.2999%2011.5%2021.2999ZM11.5%2021.2999V10.1C11.5%208.55355%2012.7536%207.29995%2014.3%207.29995H15M8.00001%2012.9H15%27%20stroke=%27%231C1C1C%27%20stroke-width=%271.5%27%2F%3E%3C%2Fsvg%3E ");
   --svg-linkedin: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2020%2021%27%20fill=%27none%27%3E%3Cpath%20d=%27M2.00492%207.75965H5.52098V18.3406H2.00492V7.75965ZM3.78648%202.65918C2.58309%202.65918%201.79688%203.44922%201.79688%204.48617C1.79688%205.5018%202.56008%206.31481%203.74047%206.31481H3.76289C4.9893%206.31481%205.75305%205.50176%205.75305%204.48617C5.73004%203.44922%204.98934%202.65918%203.78648%202.65918ZM14.1539%207.51109C12.2875%207.51109%2011.4514%208.53766%2010.9849%209.25758V7.75965H7.46781C7.51437%208.75227%207.46781%2018.3406%207.46781%2018.3406H10.9849V12.4314C10.9849%2012.115%2011.0079%2011.7996%2011.1005%2011.5729C11.3551%2010.9411%2011.9338%2010.2869%2012.9045%2010.2869C14.178%2010.2869%2014.6866%2011.2576%2014.6866%2012.6794V18.3405H18.2031V12.2732C18.2031%209.02328%2016.4687%207.51109%2014.1539%207.51109Z%27%20fill=%27%23DFF5FC%27%2F%3E%3C%2Fsvg%3E ");
   --svg-x: url("data:image/svg+xml, %3Csvg%20xmlns=%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox=%270%200%2014%2015%27%20fill=%27none%27%3E%3Cpath%20d=%27M8.22234%206.51787L13.0004%201.08325H11.8683L7.71764%205.80107L4.40497%201.08325H0.583313L5.59385%208.21806L0.583313%2013.9166H1.7154L6.09586%208.93325L9.59499%2013.9166H13.4166L8.22234%206.51787ZM6.67128%208.28069L6.16284%207.56978L2.12366%201.91836H3.86277L7.12347%206.48093L7.62978%207.19184L11.8677%2013.1222H10.1286L6.67128%208.28069Z%27%20fill=%27%23DFF5FC%27%2F%3E%3C%2Fsvg%3E ");
@@ -116,56 +196,114 @@ li {
 
 .masked-card {
   display: block;
-  background-color: red;
-  -webkit-mask-image: var(--svg-bg-card);
-          mask-image: var(--svg-bg-card);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
-  position: relative;
+  mask-image: var(--svg-border-card);
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.masked-bg-card {
+  display: block;
+  mask-image: var(--svg-bg-card);
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
 .masked-arrow {
   display: block;
-  -webkit-mask-image: var(--svg-arrow-more);
-          mask-image: var(--svg-arrow-more);
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-          mask-position: center;
+  mask-image: var(--svg-arrow-more);
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+
+.card-starter_container .card-starter {
+  position: relative;
+  width: 130px;
+  height: 150px;
 }
-@keyframes fadeInUP {
-  0% {
-    opacity: 0;
-    top: 20px;
-  }
-  100% {
-    opacity: 1;
-    top: 0;
-  }
+.card-starter_container .card-starter .card-starter_name {
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+  z-index: 3;
 }
-@keyframes scaleAnimationCirc {
-  0%, 100% {
-    transform: scale(0.5);
-    background: #f00;
-    filter: blur(0px); /* Quitar el filtro al inicio y al final */
-  }
-  50% {
-    transform: scale(0.7);
-    background: #f00;
-    filter: blur(0.25px); /* Aplicar el filtro de desenfoque durante la animación */
-  }
+.card-starter_container .card-starter .card-starter_position {
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 3;
 }
-.prueba {
-  height: 500px;
-  background-color: red;
-}/*# sourceMappingURL=styles.css.map */
+.card-starter_container .card-starter .card-starter_stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5px;
+  row-gap: 2px;
+  position: absolute;
+  top: 50px;
+  z-index: 3;
+}
+.card-starter_container .card-starter .card-starter_stats .stat-content {
+  width: 40%;
+}
+.card-starter_container .card-starter .card-starter_stats .stat-content p {
+  text-align: center;
+}
+.card-starter_container .card-starter .card-starter_stats .stat-content p:first-child {
+  margin-bottom: 3px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid green;
+}
+.card-starter_container .card-starter .masked-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+  z-index: 2;
+}
+.card-starter_container .card-starter .masked-bg-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  filter: brightness(0.5);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card-starter_container .card-starter .masked-bg-card .card-starter_avatar {
+  width: 100%;
+  height: 100%;
+}
+.card-starter_container .card-starter .point-skill {
+  width: 20px;
+  height: 20px;
+  background-color: blueviolet;
+  position: absolute;
+  top: 28px;
+  right: -10px;
+  border-radius: 50%;
+  z-index: 4;
+}
+.card-starter_container .card-starter .point-skill .card-starter_skills {
+  padding: 5px;
+  background-color: blueviolet;
+  color: white;
+  visibility: hidden;
+  position: absolute;
+  width: 100px;
+  left: -120px;
+  top: 0;
+}
+.card-starter_container .card-starter .point-skill:hover .card-starter_skills {
+  visibility: visible;
+  transition: all ease 0.3s;
+}
+
+/*# sourceMappingURL=styles.css.map */
