@@ -61,10 +61,6 @@ section {
   width: 100%;
 }
 
-.page {
-  margin: 0;
-}
-
 @font-face {
   font-family: "futura";
   src: url("/assets/fonts/futuraBold.woff") format("woff"), url("/assets/fonts/futuraBold.woff2") format("woff2");
@@ -120,9 +116,6 @@ li {
 
 .masked-card {
   display: block;
-  height: 160px;
-  width: 110px;
-  padding: 10px;
   background-color: red;
   -webkit-mask-image: var(--svg-bg-card);
           mask-image: var(--svg-bg-card);
@@ -131,6 +124,16 @@ li {
   -webkit-mask-position: center;
           mask-position: center;
   position: relative;
+}
+
+.masked-arrow {
+  display: block;
+  -webkit-mask-image: var(--svg-arrow-more);
+          mask-image: var(--svg-arrow-more);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
 }
 @keyframes fadeIn {
   0% {

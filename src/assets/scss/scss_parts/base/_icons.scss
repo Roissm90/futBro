@@ -75,12 +75,16 @@ $fs-escape-chars: (
 
 .masked-card{
   display: block;
-  height: 160px;
-  width: 110px;
-  padding: 10px;
   background-color: red;
   mask-image: var(--svg-bg-card);
   mask-repeat: no-repeat;
   mask-position: center;
   position: relative;
+}
+
+.masked-arrow {
+  display: block;
+  mask-image: var(--svg-arrow-more);
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
